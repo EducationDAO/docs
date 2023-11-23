@@ -1,18 +1,20 @@
+import ReactMarkdown from 'react-markdown';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Why from '!!raw-loader!./why.md';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/value-icon.png').default,
+    title: 'Why Education DAO?',
+    Svg: require('@site/static/img/education-dao-animated-logo.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <ReactMarkdown>{Why}</ReactMarkdown>
       </>
     ),
   },
+
   // {
   //   title: 'Focus on What Matters',
   //   Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
@@ -52,7 +54,7 @@ function Feature({Svg, title, description}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
+      <div className="container" style={{textAlign: "center", width: "60vw"}}>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
