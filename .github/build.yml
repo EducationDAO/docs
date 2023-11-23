@@ -1,0 +1,24 @@
+---
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_call:
+    # Review gh actions docs if you want to further define triggers, paths, etc
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build
+        uses: Consensys/docs-gha-2023/build@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
