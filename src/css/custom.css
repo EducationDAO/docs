@@ -43,6 +43,27 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+@font-face {
+  font-family: 'FraktionSans';
+  src: url('/static/FraktionSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FraktionSans';
+  src: url('/static/FraktionSans-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FraktionSans';
+  src: url('/static/FraktionSans-Bold.woff') format('wofff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 .center-container {
   display: flex;
   justify-content: center;
