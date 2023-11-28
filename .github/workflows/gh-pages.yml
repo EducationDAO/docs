@@ -41,3 +41,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+    
+      - name: Print npm debug log
+          if: failure()
+          run: cat /home/runner/.npm/_logs/*-debug.log
