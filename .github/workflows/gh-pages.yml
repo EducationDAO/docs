@@ -43,5 +43,5 @@ jobs:
           publish_dir: ./build
     
       - name: Print npm debug log
-          if: failure()
-          run: cat /home/runner/.npm/_logs/*-debug.log
+        if: failure()
+        run: cat /home/runner/.npm/_logs/*-debug.log
