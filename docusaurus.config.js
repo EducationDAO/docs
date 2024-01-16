@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'EducationDAO', // Usually your GitHub org/user name.
-  projectName: 'DAOdocs', // Usually your repo name.
+  projectName: 'educationdao.xyz', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
