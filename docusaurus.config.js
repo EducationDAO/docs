@@ -80,7 +80,7 @@ const config = {
           },
           {to: '/Blog', label: 'News', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/EducationDAO/',
             label: 'GitHub',
             position: 'right',
           },
@@ -94,7 +94,7 @@ const config = {
             items: [
               {
                 label: 'Projects',
-                to: '/docs/docs/projects',
+                to: '/docs/projects',
               },
             ],
           },
