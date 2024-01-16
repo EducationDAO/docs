@@ -80,7 +80,7 @@ const config = {
           },
           {to: '/Blog', label: 'News', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/EducationDAO/',
             label: 'GitHub',
             position: 'right',
           },
@@ -102,16 +102,20 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Discord',
+                href: 'https://discord.gg/24Nqz6zP',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Lens Protocol',
+                href: 'https://hey.xyz/u/educationdao',
+              },
+              {
+                label: 'Farcaster',
+                href: 'https://warpcast.com/educationdao',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/Education__DAO',
               },
             ],
           },
@@ -122,14 +126,10 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Education DAO.`,
       },
       prism: {
         theme: prismThemes.github,
