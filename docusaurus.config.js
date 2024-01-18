@@ -40,18 +40,16 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/EducationDAO/docs',
-        },
+  path: './docs',
+  sidebarPath: './sidebars.js',
+  editUrl: 'https://github.com/EducationDAO/educationdao.xyz',
+},
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/EducationDAO/docs',
+            'https://github.com/EducationDAO/educationdao.xyz',
         },
         theme: {
           customCss: './src/css/custom.css',
