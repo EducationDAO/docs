@@ -9,10 +9,10 @@ const FeatureList = [
     title: 'Why Education DAO?',
     Svg: require('@site/static/img/education-dao-animated-logo.svg').default,
     description: (
-      <div>
+      <>
+       <div>
       <iframe src="https://paragraph.xyz/@education-dao" style={{ width: '100%', height: '80vh'}} title="Updates from Education DAO via paragraph.xyz" ></iframe>
       </div>
-      <>
         <ReactMarkdown>{Why}</ReactMarkdown>
       </>
     ),
