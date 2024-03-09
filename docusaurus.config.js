@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://education-dao.xyz',
+  url: 'https://educationdao.xyz',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/EducationDAO/docs',
+            'https://github.com/Education-DAO-organization/educationdao.xyz',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/EducationDAO/docs',
+            'https://github.com/Education-DAO-organization/educationdao.xyz',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -80,7 +80,7 @@ const config = {
           },
           {to: '/Blog', label: 'News', position: 'left'},
           {
-            href: 'https://github.com/EducationDAO/',
+            href: 'https://github.com/Education-DAO-Organization/',
             label: 'GitHub',
             position: 'right',
           },
