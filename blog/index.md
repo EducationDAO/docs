@@ -8,7 +8,6 @@ title: Education DAO Announcements
   title="Updates from Education DAO via paragraph.xyz"
 ></iframe>
 <iframe
-
   src="https://thefauxy.com/"
   style={{ width: '100%', height: '80vh'}}
   title="Updates from Education DAO via paragraph.xyz"
@@ -33,11 +32,8 @@ title: Education DAO Announcements
   style={{ width: '100%', height: '80vh'}}
   title="Updates from Education DAO via paragraph.xyz"
 ></iframe>
-
-
 <iframe
   src="https://www.elmundotoday.com/"
-
   style={{ width: '100%', height: '80vh'}}
   title="Updates from Education DAO via paragraph.xyz"
 ></iframe>
