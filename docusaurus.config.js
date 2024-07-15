@@ -1,34 +1,26 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Education DAO',
+  title: 'Education DAO documentation',
   tagline: 'Preserve and maintain the collective knowledge of web3, sustainably',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://education-dao.xyz',
+  url: 'https://education-dao-organization.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs',
+  baseUrl: '/educationdao.xyz/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'EducationDAO', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  projectName: 'educationdao.xyz', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -40,18 +32,22 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/EducationDAO/docs',
-        },
+          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/docs', // Change this to a non-root path
+          include: ['**/*.md', '**/*.mdx'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+          includeCurrentVersion: true,
+        },        
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/EducationDAO/docs',
+          editUrl: 'https://github.com/Education-DAO-organization/educationdao.xyz',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -63,7 +59,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      customCss: require.resolve('./src/css/custom.css'),
       image: 'img/education-dao-animated-logo.svg',
       navbar: {
         title: 'EducationDAO',
@@ -74,18 +70,18 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'docSidebar', // Updated to match the actual sidebar id
             position: 'left',
             label: 'Explore',
           },
-          {to: '/Blog', label: 'News', position: 'left'},
+          { to: '/blog', label: 'News', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Education-DAO-Organization/',
             label: 'GitHub',
             position: 'right',
           },
         ],
-      },
+      },      
       footer: {
         style: 'dark',
         links: [
@@ -94,7 +90,7 @@ const config = {
             items: [
               {
                 label: 'Projects',
-                to: '/docs/docs/projects',
+                to: '/docs/projects',
               },
             ],
           },
@@ -102,16 +98,20 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Discord',
+                href: 'https://discord.gg/24Nqz6zP',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Lens Protocol',
+                href: 'https://hey.xyz/u/educationdao',
+              },
+              {
+                label: 'Farcaster',
+                href: 'https://warpcast.com/educationdao',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/Education__DAO',
               },
             ],
           },
@@ -122,14 +122,10 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Education DAO.`,
       },
       prism: {
         theme: prismThemes.github,

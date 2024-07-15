@@ -1,3 +1,5 @@
+## Why Education DAO?
+
 ### The advent of public blockchain networks created a fundamental change in how information is generated and shared. 
 
 The catalyst began with Bitcoin, evolved with Ethereum and now a multitude of chains, dapps and innovations exist on blockchain networks.
